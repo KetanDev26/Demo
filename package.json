@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
     "axios": "^0.21.1",
@@ -24,18 +24,11 @@
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install  && npm run build",
     "Back": "nodemon server.js",
     "dev": "concurrently  -n 'server,client' -c 'blue,green' \"npm run Back\" \"npm start\""
-
-
   },
-
-"engines": {
-
-  "node": "14.15.3",
-  "npm":"6.14.10"
-},
-
-
-
+  "engines": {
+    "node": "14.15.3",
+    "npm": "6.14.10"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
