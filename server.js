@@ -9,7 +9,8 @@ require('dotenv').config();
 
 const app=express();
 
-const port=process.env.PORT || 5000
+const port=process.env.PORT || 5000 
+const Host=process.env.HOST || '0.0.0.0'
 
 app.use(cors())
 app.use(express.json());
@@ -56,7 +57,7 @@ mongoose.connect(process.env.DB_URL ,
 
 
     
-    app.listen(port,()=>{
+    app.listen(port,Host,()=>{
 
         console.log(`Server is running on port ${port}`);
 })
