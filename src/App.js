@@ -23,7 +23,7 @@ const HandleSubmit=(e)=>{
 
   e.preventDefault();
 
-  Axios.post('https://demo908765.herokuapp.com//Demo/add',add)
+  Axios.post('https://demo908765.herokuapp.com/Demo/add',add)
   .then(result=>{
 
     console.log(result);
@@ -40,7 +40,7 @@ const HandleSubmit=(e)=>{
 
 async function GetData() {
 
-  let Name=await Axios.get("https://demo908765.herokuapp.com//Demo/")
+  let Name=await Axios.get("https://demo908765.herokuapp.com/Demo/")
   let NameData=await Name.data
 
     Setnames(NameData)
