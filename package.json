@@ -49,14 +49,10 @@
   }
 ,
 
-  "proxy": {
-    "/Demo": {
-      "target": "http://localhost:5000"
-    }
+"proxy": {
+  "/Demo": {
+  "target": "http://localhost:5000"
   }
-  
-
-
-
+  }
  
 }
