@@ -47,7 +47,14 @@
       "last 1 safari version"
     ]
   }
+,
 
+  "proxy": {
+    "/Demo": {
+      "target": "http://localhost:5000"
+    }
+  }
+  
 
 
 
