@@ -23,7 +23,7 @@ const HandleSubmit=(e)=>{
 
   e.preventDefault();
 
-  Axios.post('http://localhost:5000/Demo/add',add)
+  Axios.post('/Demo/add',add)
   .then(result=>{
 
     console.log(result);
@@ -40,7 +40,7 @@ const HandleSubmit=(e)=>{
 
 async function GetData() {
 
-  let Name=await Axios.get("http://localhost:5000/Demo/")
+  let Name=await Axios.get("/Demo/")
   let NameData=await Name.data
 
     Setnames(NameData)
